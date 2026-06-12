@@ -33,6 +33,13 @@ split_inputs {
             <&zip_xy_scaler 1 16>,
             <&zip_scroll_scaler 2 15>,
             <&zip_xy_to_scroll_mapper>;
+
+        // Layer 2: left ball becomes cursor (drop the scroll mapper)
+        layer2_cursor {
+            layers = <2>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+        };
     };
 
     trackball_listener_R: trackball_listener_R {
@@ -40,6 +47,16 @@ split_inputs {
       status = "disabled";
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>;
+
+        // Layer 2: right ball becomes scroll
+        layer2_scroll {
+            layers = <2>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_xy_scaler 1 16>,
+                <&zip_scroll_scaler 2 15>,
+                <&zip_xy_to_scroll_mapper>;
+        };
     };
 
     default_transform: keymap_transform_0 {

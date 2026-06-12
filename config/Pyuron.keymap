@@ -85,7 +85,7 @@
 &trans             &mkp MB1        &trans           &trans            &trans  &kp LA(LC(Z))  &kp LA(LC(X))     &kp LA(LC(C))  &mkp MB1       &trans
 &trans             &ipad_maximize  &ipad_left_snap  &ipad_right_snap  &trans  &kp LA(LC(F))  &kp LC(LA(G))     &kp LA(LC(H))  &trans         &trans
 &trans             &trans          &trans           &trans            &trans  &trans         &kp LA(LC(LEFT))  &kp LA(LC(J))  &kp LA(LC(L))  &kp LA(LC(K))
-&kp LA(LC(RIGHT))  &trans          &trans           &trans            &trans  &trans         &trans            &trans         &trans         &trans
+&kp LA(LC(RIGHT))  &trans          &trans           &trans            &trans  &trans         &kp LG(LBKT)      &kp LG(RBKT)   &trans         &trans
             >;
         };
     };

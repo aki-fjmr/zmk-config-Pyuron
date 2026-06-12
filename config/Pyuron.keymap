@@ -64,10 +64,10 @@
 
         default {
             bindings = <
-&lt 2 Q           &lt 2 W    &kp E    &kp R      &kp T               &kp Y      &kp U      &kp I                &lt 2 O    &lt 2 P
-&lt 1 A           &lt 1 S    &kp D    &kp F      &kp G               &kp H      &kp J      &kp K                &lt 1 L    &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V      &kp B               &mkp MB1   &kp MINUS  &kp N                &kp M      &kp COMMA
-&kp DOT           &kp SLASH  &kp TAB  &kp LCTRL  &mt LEFT_GUI LANG2  &kp SPACE  &kp ENTER  &mt RIGHT_ALT LANG1  &kp GRAVE  &kp ESCAPE
+&lt 2 Q           &lt 2 W    &kp E    &kp R      &kp T               &kp Y      &kp U      &kp I               &lt 2 O    &lt 2 P
+&lt 1 A           &lt 1 S    &kp D    &kp F      &kp G               &kp H      &kp J      &kp K               &lt 1 L    &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V      &kp B               &mkp MB1   &kp MINUS  &kp N               &kp M      &kp COMMA
+&kp DOT           &kp SLASH  &kp TAB  &kp LCTRL  &mt LEFT_GUI LANG2  &kp SPACE  &kp ENTER  &mt LEFT_ALT LANG1  &kp GRAVE  &kp ESCAPE
             >;
         };
 

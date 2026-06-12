@@ -20,7 +20,6 @@
             bindings =
                 <&macro_press &kp CAPSLOCK>,
                 <&macro_tap &kp F>,
-                <&macro_pause_for_release>,
                 <&macro_release &kp CAPSLOCK>;
 
             label = "IPAD_MAXIMIZE";
@@ -32,7 +31,6 @@
             bindings =
                 <&macro_press &kp CAPSLOCK>,
                 <&macro_tap &kp LS(LC(LEFT))>,
-                <&macro_pause_for_release>,
                 <&macro_release &kp CAPSLOCK>;
 
             label = "IPAD_LEFT_SNAP";
@@ -44,7 +42,6 @@
             bindings =
                 <&macro_press &kp CAPSLOCK>,
                 <&macro_tap &kp LS(LC(RIGHT))>,
-                <&macro_pause_for_release>,
                 <&macro_release &kp CAPSLOCK>;
 
             label = "IPAD_RIGHT_SNAP";

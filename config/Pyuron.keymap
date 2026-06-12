@@ -70,19 +70,19 @@
 
         default {
             bindings = <
-&lt 2 Q           &lt 2 W    &kp E    &kp R           &kp T               &kp Y      &kp U                  &kp I               &lt 2 O    &lt 2 P
-&lt 1 A           &lt 1 S    &kp D    &mt LEFT_GUI F  &kp G               &kp H      &mt LEFT_GUI J         &kp K               &lt 1 L    &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V           &kp B               &mkp MB1   &kp MINUS              &kp N               &kp M      &kp COMMA
-&kp DOT           &kp SLASH  &kp TAB  &kp LCTRL       &mt LEFT_GUI LANG2  &kp SPACE  &mt RIGHT_SHIFT ENTER  &mt LEFT_ALT LANG1  &kp GRAVE  &kp ESCAPE
+&lt 2 Q           &lt 2 W    &kp E    &kp R           &kp T      &kp Y               &kp U               &kp I                  &lt 2 O    &lt 2 P
+&lt 1 A           &lt 1 S    &kp D    &mt LEFT_GUI F  &kp G      &kp H               &mt LEFT_GUI J      &kp K                  &lt 1 L    &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V           &kp B      &mkp MB1            &kp MINUS           &kp N                  &kp M      &kp COMMA
+&kp DOT           &kp SLASH  &kp TAB  &kp LCTRL       &kp SPACE  &mt LEFT_GUI LANG2  &mt LEFT_ALT LANG1  &mt RIGHT_SHIFT ENTER  &kp GRAVE  &kp ESCAPE
             >;
         };
 
         symbols {
             bindings = <
-&trans          &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(UP_ARROW)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1              &kp NUMBER_2  &kp NUMBER_3
-&trans          &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(DOWN)        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4              &kp NUMBER_5  &kp NUMBER_6
-&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3        &mkp MB2              &kp EQUAL              &kp SEMICOLON             &kp SQT       &kp NUMBER_7
-&kp NUMBER_8    &kp NUMBER_9  &trans        &kp LCTRL      &mt LEFT_GUI LANG2  &kp LG(MINUS)         &kp LG(PLUS)           &mt RIGHT_ALT LANGUAGE_2  &kp NUMBER_0  &kp BACKSLASH
+&trans          &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3
+&trans          &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6
+&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &mkp MB2              &kp EQUAL              &kp SEMICOLON  &kp SQT       &kp NUMBER_7
+&kp NUMBER_8    &kp NUMBER_9  &trans        &kp LCTRL      &kp SPACE         &kp LG(MINUS)         &kp LG(PLUS)           &kp ENTER      &kp NUMBER_0  &kp BACKSLASH
             >;
         };
 

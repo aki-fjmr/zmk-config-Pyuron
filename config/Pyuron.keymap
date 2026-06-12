@@ -17,7 +17,11 @@
         ipad_maximize: ipad_maximize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp CAPSLOCK &kp F>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK &kp F>,
+                <&macro_release>,
+                <&kp CAPS &kp F>;
 
             label = "IPAD_MAXIMIZE";
         };
@@ -28,7 +32,8 @@
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK &kp LS(LC(LEFT))>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp CAPS &kp LS(LC(LEFT))>;
 
             label = "IPAD_LEFT_SNAP";
         };
@@ -39,7 +44,8 @@
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK &kp LS(LC(RIGHT))>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp CAPS &kp LS(LC(RIGHT))>;
 
             label = "IPAD_RIGHT_SNAP";
         };

@@ -18,9 +18,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp CAPSLOCK>;
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
 
             label = "IPAD_MAXIMIZE";
         };
@@ -29,9 +32,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp LS(LC(LEFT))>,
-                <&macro_release &kp CAPSLOCK>;
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp LS(LC(LEFT))>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
 
             label = "IPAD_LEFT_SNAP";
         };
@@ -40,9 +46,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp LS(LC(RIGHT))>,
-                <&macro_release &kp CAPSLOCK>;
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp LS(LC(RIGHT))>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
 
             label = "IPAD_RIGHT_SNAP";
         };
@@ -76,16 +85,16 @@
 
         symbols {
             bindings = <
-&trans          &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3
-&trans          &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6
-&kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &mkp MB2              &kp EQUAL              &kp SEMICOLON  &kp SQT       &kp NUMBER_7
-&kp NUMBER_8    &kp NUMBER_9  &trans        &kp LCTRL      &kp SPACE         &kp LG(MINUS)         &kp LG(PLUS)           &kp ENTER      &kp NUMBER_0  &kp BACKSLASH
+&kp LS(LG(NUMBER_3))  &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3
+&kp LS(LG(NUMBER_4))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6
+&kp LEFT_SHIFT        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &mkp MB2              &kp EQUAL              &kp SEMICOLON  &kp SQT       &kp NUMBER_7
+&kp NUMBER_8          &kp NUMBER_9  &trans        &kp LCTRL      &kp LG(MINUS)     &kp LEFT_GUI          &kp LEFT_ALT           &kp LG(PLUS)   &kp NUMBER_0  &kp BACKSLASH
             >;
         };
 
         screen {
             bindings = <
-&trans             &mkp MB1        &trans           &trans            &trans  &kp LA(LC(Z))  &kp LA(LC(X))     &kp LA(LC(C))  &mkp MB1       &trans
+&trans             &kp LC(LG(UP))  &trans           &trans            &trans  &kp LA(LC(Z))  &kp LA(LC(X))     &kp LA(LC(C))  &mkp MB1       &trans
 &trans             &ipad_maximize  &ipad_left_snap  &ipad_right_snap  &trans  &kp LA(LC(F))  &kp LC(LA(G))     &kp LA(LC(H))  &trans         &trans
 &trans             &trans          &trans           &trans            &trans  &trans         &kp LA(LC(LEFT))  &kp LA(LC(J))  &kp LA(LC(L))  &kp LA(LC(K))
 &kp LA(LC(RIGHT))  &trans          &trans           &trans            &trans  &trans         &kp LG(LBKT)      &kp LG(RBKT)   &trans         &trans

@@ -11,7 +11,23 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Spotlight {
+            bindings = <&spotlight>;
+            key-positions = <34 35>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        Claude {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <36 37>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+    };
 
     macros {
         ipad_maximize: ipad_maximize {
@@ -55,6 +71,14 @@
 
             label = "IPAD_RIGHT_SNAP";
         };
+
+        spotlight: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(SPACE) &kp LANG2>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     lt_to_layer_0: lt_to_layer_0 {
@@ -76,8 +100,8 @@
 
         default {
             bindings = <
-&lt 2 Q           &lt 2 W    &kp E    &kp R           &kp T      &kp Y               &kp U               &kp I                  &lt 2 O    &lt 2 P
-&lt 1 A           &lt 1 S    &kp D    &mt LEFT_GUI F  &kp G      &kp H               &mt LEFT_GUI J      &kp K                  &lt 1 L    &kp BACKSPACE
+&lt 2 Q           &lt 2 W    &lt 2 E  &kp R           &kp T      &kp Y               &kp U               &lt 2 I                &lt 2 O    &lt 2 P
+&lt 1 A           &lt 1 S    &lt 1 D  &mt LEFT_GUI F  &kp G      &kp H               &mt LEFT_GUI J      &lt 1 K                &lt 1 L    &kp BACKSPACE
 &mt LEFT_SHIFT Z  &kp X      &kp C    &kp V           &kp B      &mkp MB1            &kp MINUS           &kp N                  &kp M      &kp COMMA
 &kp DOT           &kp SLASH  &kp TAB  &kp LCTRL       &kp SPACE  &mt LEFT_GUI LANG2  &mt LEFT_ALT LANG1  &mt RIGHT_SHIFT ENTER  &kp GRAVE  &kp ESCAPE
             >;

@@ -41,6 +41,13 @@ split_inputs {
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
         };
+
+        // Layer 3: same as layer 2.
+        layer3_cursor {
+            layers = <3>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
+        };
     };
 
     trackball_listener_R: trackball_listener_R {
@@ -53,6 +60,16 @@ split_inputs {
         // Y_INVERT dropped to flip vertical scroll direction.
         layer2_scroll {
             layers = <2>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>,
+                <&zip_xy_scaler 1 16>,
+                <&zip_scroll_scaler 2 15>,
+                <&zip_xy_to_scroll_mapper>;
+        };
+
+        // Layer 3: same as layer 2.
+        layer3_scroll {
+            layers = <3>;
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>,
                 <&zip_xy_scaler 1 16>,

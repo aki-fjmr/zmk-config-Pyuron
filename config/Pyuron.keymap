@@ -153,10 +153,10 @@
 
         screen {
             bindings = <
-&trans             &trans           &trans          &trans            &trans              &kp LA(LC(O))     &kp LA(LC(Z))  &kp LA(LC(X))       &kp LA(LC(C))  &trans
-&ipad_left_switch  &ipad_left_snap  &ipad_maximize  &ipad_right_snap  &ipad_right_switch  &kp LA(LC(LEFT))  &kp LC(LA(J))  &kp LA(LC(L))       &kp LC(LA(K))  &kp LA(LC(RIGHT))
-&trans             &trans           &trans          &trans            &trans              &trans            &trans         &kp LA(LC(PERIOD))  &kp LA(LC(F))  &kp LA(LC(G))
-&kp LA(LC(H))      &trans           &trans          &trans            &trans              &trans            &trans         &trans              &trans         &trans
+&trans             &trans           &ipad_control_window  &trans            &trans              &kp LA(LC(O))     &kp LA(LC(Z))  &kp LA(LC(X))       &kp LA(LC(C))  &trans
+&ipad_left_switch  &ipad_left_snap  &ipad_maximize        &ipad_right_snap  &ipad_right_switch  &kp LA(LC(LEFT))  &kp LC(LA(J))  &kp LA(LC(L))       &kp LC(LA(K))  &kp LA(LC(RIGHT))
+&trans             &trans           &trans                &trans            &trans              &trans            &trans         &kp LA(LC(PERIOD))  &kp LA(LC(F))  &kp LA(LC(G))
+&kp LA(LC(H))      &trans           &trans                &trans            &trans              &trans            &trans         &trans              &trans         &trans
             >;
         };
 

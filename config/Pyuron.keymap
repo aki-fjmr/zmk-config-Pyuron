@@ -11,23 +11,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Spotlight {
-            bindings = <&spotlight>;
-            key-positions = <34 35>;
-            layers = <0>;
-            timeout-ms = <40>;
-        };
-
-        Claude {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <36 37>;
-            layers = <0>;
-            timeout-ms = <40>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         ipad_maximize: ipad_maximize {
@@ -142,19 +126,19 @@
 
         default {
             bindings = <
-&lt 3 Q           &lt 2 W    &lt 2 E  &kp R           &kp T      &kp Y               &kp U               &lt 2 I                &lt 2 O    &lt 3 P
-&lt 1 A           &lt 1 S    &lt 1 D  &mt LEFT_GUI F  &kp G      &kp H               &mt LEFT_GUI J      &lt 1 K                &lt 1 L    &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V           &kp B      &mkp MB1            &kp SLASH           &kp N                  &kp M      &kp COMMA
-&kp DOT           &kp MINUS  &kp TAB  &kp LCTRL       &kp SPACE  &mt LEFT_GUI LANG2  &mt LEFT_ALT LANG1  &mt RIGHT_SHIFT ENTER  &kp GRAVE  &kp ESCAPE
+&lt 3 Q  &lt 2 W    &lt 2 E             &kp R           &kp T      &kp Y               &kp U               &lt 2 I                &lt 2 O    &lt 3 P
+&lt 1 A  &lt 1 S    &lt 1 D             &mt LEFT_GUI F  &kp G      &kp H               &mt LEFT_GUI J      &lt 1 K                &lt 1 L    &kp BACKSPACE
+&kp Z    &kp X      &kp C               &kp V           &kp B      &mkp MB1            &kp SLASH           &kp N                  &kp M      &kp COMMA
+&kp DOT  &kp MINUS  &mt LEFT_SHIFT TAB  &kp LCTRL       &kp SPACE  &mt LEFT_GUI LANG2  &mt LEFT_ALT LANG1  &mt RIGHT_SHIFT ENTER  &kp GRAVE  &kp ESCAPE
             >;
         };
 
         symbols {
             bindings = <
-&kp LS(LG(NUMBER_3))  &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3
-&kp LS(LG(NUMBER_4))  &kp LEFT      &kp DOWN      &kp RIGHT      &kp LC(DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6
-&kp LEFT_SHIFT        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &mkp MB2              &kp EQUAL              &kp SEMICOLON  &kp SQT       &kp NUMBER_7
-&kp NUMBER_8          &kp NUMBER_9  &trans        &kp LCTRL      &kp LG(MINUS)     &kp LEFT_GUI          &kp LEFT_ALT           &kp LG(PLUS)   &kp NUMBER_0  &kp BACKSLASH
+&kp LS(LG(NUMBER_3))  &kp LC(LEFT)  &kp UP          &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3
+&kp LS(LG(NUMBER_4))  &kp LEFT      &kp DOWN        &kp RIGHT      &kp LC(DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6
+&kp LS(LG(NUMBER_5))  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3      &mkp MB2              &kp EQUAL              &kp SEMICOLON  &kp SQT       &kp NUMBER_7
+&kp NUMBER_8          &kp NUMBER_9  &kp LEFT_SHIFT  &kp LCTRL      &kp LG(MINUS)     &kp LEFT_GUI          &kp LEFT_ALT           &kp LG(PLUS)   &kp NUMBER_0  &kp BACKSLASH
             >;
         };
 
@@ -163,16 +147,16 @@
 &trans             &trans           &trans          &trans            &trans              &kp LA(LC(O))     &kp LA(LC(Z))  &kp LA(LC(X))       &kp LA(LC(C))  &trans
 &ipad_left_switch  &ipad_left_snap  &ipad_maximize  &ipad_right_snap  &ipad_right_switch  &kp LA(LC(LEFT))  &kp LC(LA(J))  &kp LA(LC(L))       &kp LC(LA(K))  &kp LA(LC(RIGHT))
 &trans             &trans           &trans          &trans            &trans              &trans            &trans         &kp LA(LC(PERIOD))  &kp LA(LC(F))  &kp LA(LC(G))
-&kp LA(LC(H))      &trans           &trans          &trans            &trans              &trans            &trans         &trans              &trans         &trans
+&kp LA(LC(H))      &trans           &trans          &trans            &spotlight          &trans            &trans         &kp LA(SPACE)       &trans         &trans
             >;
         };
 
         right_only {
             bindings = <
-&trans  &mkp MB2  &trans    &trans                &trans                 &trans  &trans                 &trans                &mkp MB2  &trans
-&trans  &trans    &mkp MB1  &kp LG(LEFT_BRACKET)  &trans                 &trans  &kp LG(RIGHT_BRACKET)  &mkp MB1              &trans    &trans
-&trans  &trans    &trans    &trans                &trans                 &trans  &trans                 &trans                &trans    &trans
-&trans  &trans    &trans    &trans                &kp LG(RIGHT_BRACKET)  &trans  &trans                 &kp LG(LEFT_BRACKET)  &trans    &trans
+&trans  &mkp MB2  &kp LEFT_GUI  &trans                &trans                 &trans   &trans                 &kp LEFT_GUI          &mkp MB2  &trans
+&trans  &trans    &mkp MB1      &kp LG(LEFT_BRACKET)  &trans                 &trans   &kp LG(RIGHT_BRACKET)  &mkp MB1              &trans    &trans
+&trans  &trans    &trans        &trans                &trans                 &trans   &trans                 &trans                &trans    &trans
+&trans  &trans    &trans        &trans                &kp LG(RIGHT_BRACKET)  &kp TAB  &kp TAB                &kp LG(LEFT_BRACKET)  &trans    &trans
             >;
         };
     };

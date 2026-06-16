@@ -11,7 +11,15 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        bt_clr {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <1 11 21 33 8 38 30 18>;
+            timeout-ms = <60>;
+        };
+    };
 
     macros {
         ipad_maximize: ipad_maximize {

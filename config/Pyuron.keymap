@@ -11,15 +11,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        bt_clr {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <1 11 21 33 8 38 30 18>;
-            timeout-ms = <60>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         ipad_maximize: ipad_maximize {
@@ -170,10 +162,10 @@
 
         onehand {
             bindings = <
-&trans  &mkp MB2  &kp LEFT_GUI  &trans                &trans                 &trans   &trans                 &kp LEFT_GUI          &mkp MB2  &trans
-&trans  &trans    &mkp MB1      &kp LG(LEFT_BRACKET)  &trans                 &trans   &kp LG(RIGHT_BRACKET)  &mkp MB1              &trans    &trans
-&trans  &trans    &trans        &trans                &trans                 &trans   &trans                 &trans                &trans    &trans
-&trans  &trans    &trans        &trans                &kp LG(RIGHT_BRACKET)  &kp TAB  &kp TAB                &kp LG(LEFT_BRACKET)  &trans    &trans
+&trans  &mkp MB2        &kp LEFT_GUI  &trans                &trans                 &trans   &trans                 &kp LEFT_GUI          &mkp MB2  &trans
+&trans  &trans          &mkp MB1      &kp LG(LEFT_BRACKET)  &trans                 &trans   &kp LG(RIGHT_BRACKET)  &mkp MB1              &trans    &trans
+&trans  &trans          &trans        &trans                &trans                 &trans   &trans                 &trans                &trans    &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans                &kp LG(RIGHT_BRACKET)  &kp TAB  &kp TAB                &kp LG(LEFT_BRACKET)  &trans    &bt BT_CLR_ALL
             >;
         };
     };

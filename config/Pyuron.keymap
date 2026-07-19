@@ -126,7 +126,7 @@
 
         default {
             bindings = <
-&lt 4 Q  &kp W      &mt LEFT_GUI E      &kp R      &kp T      &kp Y               &kp U               &mt LEFT_GUI I         &kp O      &lt 4 P
+&lt 4 Q  &kp W      &kp E               &kp R      &kp T      &kp Y               &kp U               &kp I                  &kp O      &lt 4 P
 &kp A    &lt 3 S    &lt 2 D             &lt 1 F    &kp G      &kp H               &lt 1 J             &lt 2 K                &lt 3 L    &kp BACKSPACE
 &kp Z    &kp X      &kp C               &kp V      &kp B      &mkp MB1            &kp SLASH           &kp N                  &kp M      &kp COMMA
 &kp DOT  &kp MINUS  &mt LEFT_SHIFT TAB  &kp LCTRL  &kp SPACE  &mt LEFT_GUI LANG2  &mt LEFT_ALT LANG1  &mt RIGHT_SHIFT ENTER  &kp GRAVE  &kp ESCAPE
@@ -145,7 +145,7 @@
         symbols {
             bindings = <
 &trans        &trans                &trans          &trans     &trans                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION        &kp AT_SIGN            &kp HASH
-&trans        &trans                &trans          &trans     &trans                &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR             &kp PERCENT            &kp CARET
+&trans        &kp LEFT              &trans          &kp RIGHT  &trans                &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR             &kp PERCENT            &kp CARET
 &trans        &trans                &trans          &trans     &trans                &trans                &kp PLUS               &kp COLON              &kp DOUBLE_QUOTES      &kp AMPERSAND
 &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_SHIFT  &kp LCTRL  &kp LG(LEFT_BRACKET)  &kp LEFT_GUI          &kp LEFT_ALT           &kp LG(RIGHT_BRACKET)  &kp RIGHT_PARENTHESIS  &kp PIPE
             >;

@@ -153,7 +153,7 @@
 
         screen {
             bindings = <
-&trans         &ipad_left_switch  &ipad_control_window  &ipad_right_switch  &trans         &kp LA(LC(O))     &kp LA(LC(Z))  &kp LA(LC(X))       &kp LA(LC(C))  &trans
+&trans         &ipad_left_switch  &ipad_control_window  &ipad_right_switch  &trans         &kp LA(LC(O))     &kp LA(LC(V))  &kp LA(LC(B))       &kp LA(LC(N))  &kp LA(LC(Z))
 &trans         &ipad_left_snap    &ipad_maximize        &ipad_right_snap    &trans         &kp LA(LC(LEFT))  &kp LC(LA(J))  &kp LA(LC(L))       &kp LC(LA(K))  &kp LA(LC(RIGHT))
 &trans         &trans             &trans                &trans              &trans         &trans            &trans         &kp LA(LC(PERIOD))  &kp LA(LC(F))  &kp LA(LC(G))
 &kp LA(LC(H))  &trans             &trans                &trans              &kp LG(MINUS)  &trans            &trans         &kp LG(PLUS)        &trans         &trans
